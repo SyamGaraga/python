@@ -42,8 +42,16 @@
 #     return count
 # print(voWels('SYAMGARAGA'.lower()))
 
-def fun(n):
-    for i in range(n):
-        i=i*2
-    return i
-print(fun(5))
+# def fun(n):
+#     for i in range(n):
+#         i=i*2
+#     return i
+# print(fun(5))
+
+def find_k(list1,num):
+    for i in range(len(list1)):
+        if num in list1:
+            return True
+    return False
+print(find_k([1,2,3,4,5],6))
+
