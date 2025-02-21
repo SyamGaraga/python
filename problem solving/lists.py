@@ -363,13 +363,89 @@
 #         if i==0 or i==len(list1)-1:
 #             sum+=list
 
-m=[
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-]        
-sum1= m[0][0]+m[0][2]+m[1][1]+m[2][0]+m[2][2] 
-print(sum1) 
+# m=[
+#     [1,2,3],
+#     [4,5,6],
+#     [7,8,9]
+# ]        
+# sum1= m[0][0]+m[1][1]+m[2][2]+m[0][2]+m[2][0]
+# print(sum1) 
+
+
+# transpose of an matrix
+
+# m=[[1,2,3],
+#    [4,5,6],
+#    [7,8,9]]
+# for i in range(len(m)):
+#     for j in range(len(m)):
+#         if i<=j:
+#             m[i][j],m[j][i]=m[j][i],m[i][j]
+    
+# print(m,end=" ")
+
+# sum of the diagonals
+# sum=0
+# m=[[1,2,3],[4,5,6],[7,8,9]]
+# for i in range(len(m)):
+#     for j in range(len(m)):
+#         if i==j or i+j==len(m)-1:
+#             sum+=m[i][j]
+# print(sum)
+
+# sum=0
+# m=[[1,2,3],[4,5,6],[7,8,9]]
+# for i in range(len(m)):
+#     for j in range(len(m)):
+#         if (i==j or i+j==len(m)-1) :
+#             sum+=m[i][j]
+#             if i==j and i+j==len(m)-1:
+#                 sum+=m[i][j]
+# print(sum)
 
 
 
+    
+# def boundary(m):
+#     for i in range(len(m)):
+#         for j in range(len(m[i])):
+#             if i==0 or j==0 or i==len(m)-1 or j==len(m[i])-1:
+#                 print(m[i][j],end=' ')
+#             else:
+#                 print(" ",end=" ")
+#         print()            
+# m=[[1,2,3],[4,5,6],[7,8,9]]               
+# boundary(m)
+
+# #printing the diagonal elements
+# def print_diagonals(list1):
+#     for i in range(len(list1)):
+#         for j in range(len(list1)):
+#             if i==j or i+j==len(list1)-1:
+#                 print(list1[i][j],end=' ')
+#             else:
+#                 print(" ",end=" ")    
+#         print()
+# print_diagonals([[1,2,3],[4,5,6],[7,8,9]])
+
+# # printing the diagonal in the same line
+# def print_diagonals(list1):
+#     for i in range(len(list1)):
+#         for j in range(len(list1)):
+#             if i==j or i+j==len(list1)-1:
+#                 print(list1[i][j],end=' ')
+#             else:
+#                 print(" ",end=" ")    
+#         # print()
+# print_diagonals([[1,2,3],[4,5,6],[7,8,9]])
+
+# printing the boundary elements in the same line
+def boundary(m):
+    for i in range(len(m)):
+        for j in range(len(m[i])):
+            if i==0 or j==0 or i==len(m)-1 or j==len(m[i])-1:
+                print(m[i][j],end=' ')
+            else:
+                print(" ",end=" ")         
+m=[[1,2,3],[4,5,6],[7,8,9]]               
+boundary(m) 
